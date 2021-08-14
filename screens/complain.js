@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 
 import { Card } from 'react-native-paper';
-import Constants from 'expo-constants'
+// import Constants from 'expo-constants'
 import t from 'tcomb-form-native';
 
 let Form = t.form.Form;
@@ -54,7 +54,7 @@ class Complain extends Component {
       products: temp,
     });
   };
-renderFlatList = (renderData) => {
+  renderFlatList = (renderData) => {
     return (
       <FlatList
         data={renderData}
@@ -89,6 +89,7 @@ renderFlatList = (renderData) => {
     } else {
       ToastAndroid.show('Please fix errors', ToastAndroid.SHORT);
     }
+    //console.log(value);
   }
 
   render() {
@@ -132,7 +133,6 @@ renderFlatList = (renderData) => {
         gender: {
           label:'Giới tính', 
           order: 'asc',
-          nullOption: {value: '', text: 'Chọn giới tính'} ,
           isCollapsed: false,
         },
     }
