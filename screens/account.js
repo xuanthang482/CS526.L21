@@ -1,12 +1,14 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import { images } from "../constants"
 
 
 
 function Account({navigation}){
     return (
-        <View>this is Account screen</View>
+        <View>
+          <Text>this is Notify screen</Text>
+        </View>
     );
 }
 

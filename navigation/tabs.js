@@ -47,7 +47,7 @@ function Tabs(){
                         options={{
                             tabBarIcon: ({ focused }) => (
                                 <Image
-                                    source={images.plane_icon}
+                                    source={images.bell_icon}
                                     resizeMode="contain"
                                     style={{
                                         width: 25,
@@ -64,7 +64,7 @@ function Tabs(){
                         options={{
                             tabBarIcon: ({ focused }) => (
                                 <Image
-                                    source={images.plane_icon}
+                                    source={images.warn_icon}
                                     resizeMode="contain"
                                     style={{
                                         width: 25,
@@ -81,7 +81,7 @@ function Tabs(){
                         options={{
                             tabBarIcon: ({ focused }) => (
                                 <Image
-                                    source={images.plane_icon}
+                                    source={images.account_icon}
                                     resizeMode="contain"
                                     style={{
                                         width: 25,

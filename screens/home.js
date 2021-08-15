@@ -1,18 +1,52 @@
 import React from 'react';
 import { View, Text, ImageBackground, StyleSheet, Button, TouchableOpacity, Image } from 'react-native';
 import { images } from "../constants"
+import { LinearGradient } from 'expo-linear-gradient';
 
 function Home({navigation}){
     return (
         <View style={styles.container}>
-            {/* <Text>hello</Text> */}
+
             <View style={styles.header}> 
-                <ImageBackground source={images.bg_welcome} style={styles.image_styles}>
-                </ImageBackground>
+                <LinearGradient 
+                    colors={['#244CB8', '#1A357C']} 
+                    style={styles.linearGradient}>
+                    
+                    <View style={{
+                        justifyContent: 'center', 
+                        alignItems: 'center',
+                        marginTop: 50,
+                    }}>
+                        <Image
+                            //style={styles.tinyLogo}
+                            source={images.logo_boyte}
+                            style={{
+                                width: 70,
+                                height: 70,
+                                resizeMode: 'cover'
+                            }}
+                        />
+                    </View>
+                    <View
+                        style={{justifyContent: 'center', 
+                                alignItems: 'center',
+                                marginTop: 15,
+                    }}
+                    >
+                        <Text style={styles.text_header1}>
+                            BAN CHỈ ĐẠO QUỐC GIA
+                        </Text>
+                        <Text style={styles.text_header1}>
+                            PHÒNG CHỐNG DỊCH BỆNH COVID-19
+                        </Text>
+                    </View>
+                </LinearGradient>
             </View>
             <View style={styles.space}>
                 <TouchableOpacity style={styles.btn_dk}>
-                    <Text>ĐĂNG KÝ KHAI BÁO</Text>
+                    <Text style={{color: 'white'}}>
+                        KHAI BÁO CÁCH LY
+                    </Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.container_2Btn}>
@@ -22,6 +56,7 @@ function Home({navigation}){
                             style={{
                             width: 30,
                             height: 30,
+                            tintColor: 'white',
                             }}
                     />
                     <Text style={styles.text}>Khai báo y tế nhập cảnh</Text>
@@ -32,6 +67,7 @@ function Home({navigation}){
                                 style={{
                                 width: 30,
                                 height: 30,
+                                tintColor: 'white',
                                 }}
                         />
                     <Text style={styles.text}>Khai báo y tế nội địa</Text>
@@ -48,19 +84,19 @@ const styles = StyleSheet.create({
     },
     image_styles: {
         flex: 1,
-        width: "100%",
+        width: '100%',
         height: '100%',
-        aspectRatio: 11/3,
       },
     header: {
         width: "100%",
-        height: "30%",
-        backgroundColor: 'black',
+        height: "40%",
+        //backgroundColor: '',
         alignItems: 'center',
+        //ackgroundColor: 
     },
     space: {
         width: "80%",
-        height: "10%",
+        height: "20%",
         justifyContent: 'center',
         //backgroundColor: '#74A6F3'
     },
@@ -71,7 +107,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         width:'100%',
         height:50,
-        backgroundColor:'#5CC846',
+        backgroundColor:'#81A2F9',
         borderRadius:10,
     },
     container_2Btn: {
@@ -104,7 +140,20 @@ const styles = StyleSheet.create({
     },
     text: {
         textAlign: 'center',
-        marginTop: 20,
+        marginTop: 10,
+        color: 'white',
+    },
+    text_header1: { 
+        color: 'white',
+        fontSize: 20,
+    },
+    linearGradient: { 
+        width: '100%',
+        height: '100%',
+        flex: 1,
+        paddingLeft: 15,
+        paddingRight: 15,
+        borderRadius: 5
     }
   });
 
