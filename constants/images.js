@@ -7,6 +7,8 @@ const bell_icon = require("../assets/images/bell.png");
 const warn_icon = require("../assets/images/warn.png");
 const account_icon = require("../assets/images/account.png");
 const logo_boyte = require("../assets/images/logo_boyte.png");
+const vietnam_flag = require("../assets/images/vietnam_flag.png");
+const vietnam_flag2 = require("../assets/images/vietnam_flag2.png");
 export default {
     bg_welcome,
     plane_icon,
@@ -17,4 +19,6 @@ export default {
     account_icon,
     trongdonghalf,
     logo_boyte,
+    vietnam_flag, 
+    vietnam_flag2,
 }
