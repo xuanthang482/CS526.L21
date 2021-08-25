@@ -9,6 +9,8 @@ const account_icon = require("../assets/images/account.png");
 const logo_boyte = require("../assets/images/logo_boyte.png");
 const vietnam_flag = require("../assets/images/vietnam_flag.png");
 const vietnam_flag2 = require("../assets/images/vietnam_flag2.png");
+const phone = require("../assets/images/phone.png");
+const address = require("../assets/images/address.png");
 export default {
     bg_welcome,
     plane_icon,
@@ -21,4 +23,7 @@ export default {
     logo_boyte,
     vietnam_flag, 
     vietnam_flag2,
+    phone,
+    address,
+    
 }

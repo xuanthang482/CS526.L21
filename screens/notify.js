@@ -1,13 +1,16 @@
-import React, {useState} from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import React, {useState, Component} from 'react';
+import { View, Text, TouchableOpacity, StyleSheet, Image, } from 'react-native';
 import { images } from "../constants"
+import Thinhquyen from "../components/thinhquyen"
 
 
 
-function Notify({navigation}){
+function Notify(){
     const [infected, setInfected] = useState(null);
     const [recovered, setRecovered] = useState(null);
     const [deceased, setDeceased] = useState(null);
+    const [isNhaThuoc, setStatus] = useState(true);
+    var key = true;
     async function cc () {
         const res = await fetch('https://api.apify.com/v2/key-value-stores/EaCBL1JNntjR3EakU/records/LATEST?disableRedirect=true', {
                             method: 'GET',
@@ -17,11 +20,22 @@ function Notify({navigation}){
         setRecovered(data.recovered)
         setDeceased(data.deceased)
     }
-
-
     cc();
     var date = new Date();
     var formatedDate = `${date.getMonth()+1}-${date.getDate()}-${date.getFullYear()}`
+
+    function Setnhathuoc(){
+        
+        key = true
+        console.log(key)
+    
+    }
+    function Setimage(){
+        console.log(key)
+        key = false
+        console.log(key)
+    
+    }
     return (
         <View style={styles.container}>
         { formatedDate && <Text style={{fontWeight: 'bold'}}>Số liệu thống kê đến ngày {formatedDate}</Text> }
@@ -100,11 +114,8 @@ function Notify({navigation}){
 
                 
             </View>
-            
-            {/* <Text>this is real notify screen</Text>
-            {infected && <Text>{infected} </Text> }
-            {recovered && <Text>{recovered} </Text> }
-            {deceased && <Text>{deceased} </Text> } */}
+           <Thinhquyen />
+           
         </View>
     );
 }
@@ -136,9 +147,21 @@ const styles = StyleSheet.create({
         alignItems:'center',
         justifyContent: 'space-around',
         flexDirection: 'row',
-        
-
     },
+    btn_TF: { 
+        alignItems:'center',
+        justifyContent:'space-around',
+        width:180,
+        height:40,
+        padding:5,
+        margin: 5,
+    }, 
+    view_1: {
+        width: '100%',
+        flexDirection: 'row', 
+        alignItems: 'center',
+        justifyContent: 'center', 
+    }, 
 })
 
 export default Notify 
