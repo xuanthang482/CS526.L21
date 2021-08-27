@@ -19,9 +19,11 @@ class CoinView extends React.Component {
     });
     
   return (
-      <View style={styles.container}>
+    <View contentContainerStyle={styles.container}>
+      <ScrollView >
         {coinItems}
-      </View>
+      </ScrollView>
+    </View>  
     );
   }
  }

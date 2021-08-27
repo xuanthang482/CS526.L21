@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   text_header1: {
         color: 'black',
         fontSize: 16,
-        fontWeight: 700,
+        fontWeight: '700',
   },
   text: {
     color: 'black'

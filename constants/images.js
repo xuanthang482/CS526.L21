@@ -11,6 +11,10 @@ const vietnam_flag = require("../assets/images/vietnam_flag.png");
 const vietnam_flag2 = require("../assets/images/vietnam_flag2.png");
 const phone = require("../assets/images/phone.png");
 const address = require("../assets/images/address.png");
+const protect_image_1 = require("../assets/images/Khuyencao.jpg")
+const protect_image_2 = require("../assets/images/Thongbaokhan.jpg")
+const protect_image_3 = require("../assets/images/TTgkhuyencao.jpg")
+const protect_image_4 = require("../assets/images/TTg.jpg")
 export default {
     bg_welcome,
     plane_icon,
@@ -25,5 +29,8 @@ export default {
     vietnam_flag2,
     phone,
     address,
-    
+    protect_image_1,
+    protect_image_2,
+    protect_image_3,
+    protect_image_4,
 }

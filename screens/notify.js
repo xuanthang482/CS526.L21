@@ -9,7 +9,7 @@ function Notify(){
     const [infected, setInfected] = useState(null);
     const [recovered, setRecovered] = useState(null);
     const [deceased, setDeceased] = useState(null);
-    const [isNhaThuoc, setStatus] = useState(true);
+    // const [isNhaThuoc, setStatus] = useState(true);
     var key = true;
     async function cc () {
         const res = await fetch('https://api.apify.com/v2/key-value-stores/EaCBL1JNntjR3EakU/records/LATEST?disableRedirect=true', {
@@ -121,6 +121,7 @@ function Notify(){
 }
 const styles = StyleSheet.create({
     container: {
+      marginTop: 50,  
       width: '100%',
       height: '100%',
       flex:1,

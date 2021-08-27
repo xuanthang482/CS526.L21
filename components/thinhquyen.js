@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet, Image, } from 'react-native';
 import { images } from "../constants"
 import renderIf from 'render-if';
 import CoinView  from '../components/coinview'
-
+import BaoveBanthan from '../components/protectmyself';
 class Thinhquyen extends Component {
     constructor(){
         super();
@@ -93,7 +93,10 @@ class Thinhquyen extends Component {
                             width: '100%',
                             height: '100%',
                         }} 
-                            />
+                            >
+                                <BaoveBanthan/>
+                            </View>
+
                         )}
                 </View>
         </View>
