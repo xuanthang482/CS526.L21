@@ -13,43 +13,32 @@ class CoinItem extends React.Component {
           {this.props.name || 'Name'}
         </Text>
 
-        <View styles={{flexDirection: 'row',}}>   
-            <View style={{
-                backgroundColor:'pink',
-                width: 20,
-                height: 20,
-                }}>
-
-            </View>
-            <View style={{
-                backgroundColor:'yellow',
-                width:20,
-                height:20,
-                }}>
-
-            </View>
-            {/* <Image source={images.phone} 
+        <View style={{flexDirection: 'row',}}>   
+            
+            <Image source={images.phone} 
                         resizeMode='contain' 
                         style={{
                         width: 20,
                         height: 20,
                         }}
                 />
-            <Text>hellooo</Text> */}
-            {/* <Text style={styles.text}>
+            <Text style={styles.text}>
                 {(this.props.price || 0)}
-            </Text> */}
+            </Text>
         </View>
         
-        {/* <View style={styles.row_info}>
-            <Image 
-                source={images.address}
-                //resizeMode='cover'
-            />
+        <View style={{flexDirection: 'row',}}>
+            <Image source={images.address} 
+                            resizeMode='contain' 
+                            style={{
+                            width: 20,
+                            height: 20,
+                            }}
+                    />
             <Text style={styles.text}>
-            {'diachi: ' + (this.props.rank || 'Rank')}
+              {(this.props.rank || 'Rank')}
             </Text>
-        </View> */}
+        </View>
 
       </View>
     );
@@ -58,15 +47,15 @@ class CoinItem extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
-    height: 80,
+    width: '80%',
+    height:80,
     flexDirection: 'column', // row
     backgroundColor: 'white',
     alignItems: 'flex-start',
     justifyContent: 'space-around', // center, space-around
     marginTop: 5,
-    marginBottom: 5,
     paddingHorizontal: 32,
+    borderRadius:10,
   },
   text_header1: {
         color: 'black',

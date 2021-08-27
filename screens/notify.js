@@ -20,7 +20,7 @@ function Notify(){
         setRecovered(data.recovered)
         setDeceased(data.deceased)
     }
-    cc();
+    //cc();
     var date = new Date();
     var formatedDate = `${date.getMonth()+1}-${date.getDate()}-${date.getFullYear()}`
 

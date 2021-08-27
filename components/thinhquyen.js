@@ -50,7 +50,7 @@ class Thinhquyen extends Component {
                             <View style={{
                             backgroundColor: '#7C9DF3',
                             width: '100%',
-                            height: 5,}} 
+                            height: 2,}} 
                             />
                         )}
                     </View>
@@ -68,7 +68,7 @@ class Thinhquyen extends Component {
                             <View style={{
                             backgroundColor: '#7C9DF3',
                             width: '100%',
-                            height: 5,}} 
+                            height: 2,}} 
                             />
                         )}
                     
@@ -76,11 +76,12 @@ class Thinhquyen extends Component {
                     </View>
                 
                 </View>
+                <View style={styles.view_2}>
                 {renderIf(this.state.course.status_left===1)(
                             <View style={{
-                            backgroundColor: 'black',
+                            //backgroundColor: 'black',
                             width: '100%',
-                            height: 50,
+                            height: 90,
                         }} 
                             >
                                 <CoinView />
@@ -88,12 +89,13 @@ class Thinhquyen extends Component {
                         )}
                 {renderIf(this.state.course.status_right===1)(
                             <View style={{
-                            backgroundColor: 'blue',
+                            backgroundColor: 'pink',
                             width: '100%',
                             height: '100%',
                         }} 
                             />
                         )}
+                </View>
         </View>
         )
       }
@@ -142,7 +144,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row', 
         //alignItems: 'center',
         justifyContent: 'center', 
-        backgroundColor: 'pink'
+        //backgroundColor: 'pink'
     }, 
     scroll : {
         width: '100%',
@@ -153,6 +155,12 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         flexDirection: 'column',
+    },
+    view_2: {
+        //backgroundColor: 'pink',
+        width: '100%',
+        height: '100%',
+
     }
 })
 export default Thinhquyen

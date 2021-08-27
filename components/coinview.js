@@ -19,7 +19,7 @@ class CoinView extends React.Component {
     });
     
   return (
-      <View style={[styles.container, this.props.style]}>
+      <View style={styles.container}>
         {coinItems}
       </View>
     );
@@ -29,9 +29,10 @@ class CoinView extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-      flex: 1,
+      //flex: 1,
       // flexDirection: 'column', // row
-      backgroundColor: 'skyblue',
+      backgroundColor: '#E9EAED',
+      alignItems: 'center',
       // justifyContent: 'center',
       // alignItems: 'center'
   }
