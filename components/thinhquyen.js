@@ -70,34 +70,31 @@ class Thinhquyen extends Component {
                             width: '100%',
                             height: 2,}} 
                             />
-                        )}
-                    
-                        
+                        )}  
                     </View>
-                
                 </View>
                 <View style={styles.view_2}>
-                {renderIf(this.state.course.status_left===1)(
-                            <View style={{
-                            //backgroundColor: 'black',
-                            width: '100%',
-                            height: 90,
-                        }} 
-                            >
-                                <CoinView />
-                             </View>
-                        )}
-                {renderIf(this.state.course.status_right===1)(
-                            <View style={{
-                            backgroundColor: 'pink',
-                            width: '100%',
-                            height: '100%',
-                        }} 
-                            >
-                                <BaoveBanthan/>
-                            </View>
-
-                        )}
+                    {renderIf(this.state.course.status_left===1)(
+                                <View style={{
+                                //backgroundColor: 'black',
+                                width: '100%',
+                                height: '100%',
+                                alignItems:'center',
+                                marginVertical:8,
+                            }} 
+                                >
+                                    <CoinView />
+                                </View>
+                            )}
+                    {renderIf(this.state.course.status_right===1)(
+                                <View style={{
+                                width: '100%',
+                                height: '100%',
+                            }} 
+                                >
+                                    <BaoveBanthan/>
+                                </View>
+                            )}
                 </View>
         </View>
         )
@@ -109,7 +106,6 @@ const styles = StyleSheet.create({
       width: '100%',
       height: '100%',
       flex:1,
-      //backgroundColor: 'yellow',
       alignItems: 'center',
 
     },
@@ -160,9 +156,11 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
     },
     view_2: {
+        alignItems:'center',
         //backgroundColor: 'pink',
         width: '100%',
         height: '100%',
+        marginHorizontal:20
 
     }
 })

@@ -47,14 +47,14 @@ class CoinItem extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    width: '80%',
+    width: '90%',
     height:80,
     flexDirection: 'column', // row
     backgroundColor: 'white',
     alignItems: 'flex-start',
     justifyContent: 'space-around', // center, space-around
     marginTop: 5,
-    paddingHorizontal: 32,
+    paddingHorizontal: 16,
     borderRadius:10,
   },
   text_header1: {

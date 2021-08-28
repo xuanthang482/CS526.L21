@@ -17,7 +17,7 @@ class BaoveBanthan extends React.Component{
                 }}
                 />    
      
-    <Image source={images.protect_image_1} 
+    <Image source={images.protect_image_2} 
            resizeMode = 'contain' 
            style={{
             width: 360,
@@ -26,7 +26,7 @@ class BaoveBanthan extends React.Component{
             marginRight: 10, 
             }}
             />  
-    <Image source={images.protect_image_1} 
+    <Image source={images.protect_image_3} 
             resizeMode = 'stretch' 
             style={{
                 width: 360,
@@ -35,7 +35,7 @@ class BaoveBanthan extends React.Component{
                 marginRight: 10, 
                 }}
             />  
-    <Image source={images.protect_image_1} 
+    <Image source={images.protect_image_4} 
            resizeMode = 'stretch' 
            style={{
                width: 360,

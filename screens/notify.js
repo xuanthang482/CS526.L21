@@ -20,7 +20,7 @@ function Notify(){
         setRecovered(data.recovered)
         setDeceased(data.deceased)
     }
-    //cc();
+    cc();
     var date = new Date();
     var formatedDate = `${date.getMonth()+1}-${date.getDate()}-${date.getFullYear()}`
 
@@ -40,7 +40,7 @@ function Notify(){
         <View style={styles.container}>
         { formatedDate && <Text style={{fontWeight: 'bold'}}>Số liệu thống kê đến ngày {formatedDate}</Text> }
            <View style={styles.headings}>
-                <TouchableOpacity style={styles.square}>
+                <TouchableOpacity activeOpacity={1} style={styles.square}>
                         <Text>Bị nhiễm</Text>
                         <View style={{flexDirection: 'row',}}>
                             <Image source={images.vietnam_flag} 
@@ -64,7 +64,7 @@ function Notify(){
                         </View>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.square}>
+                <TouchableOpacity activeOpacity={1} style={styles.square}>
                         <Text>Tử vong</Text>
                         <View style={{flexDirection: 'row',}}>
                             <Image source={images.vietnam_flag} 
@@ -88,7 +88,7 @@ function Notify(){
                         </View>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.square}>
+                <TouchableOpacity activeOpacity={1} style={styles.square}>
                         <Text>Bình phục</Text>
                         <View style={{flexDirection: 'row',}}>
                             <Image source={images.vietnam_flag} 
@@ -133,9 +133,9 @@ const styles = StyleSheet.create({
         borderWidth:1,
         borderColor:'rgba(0,0,0,0.2)',
         alignItems:'center',
-        justifyContent:'space-around',
-        width:125,
-        height:125,
+        justifyContent:'space-evenly',
+        width:112,
+        height:112,
         //backgroundColor:'#439ED6',
         borderRadius:10,
         padding:5,

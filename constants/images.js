@@ -15,6 +15,9 @@ const protect_image_1 = require("../assets/images/Khuyencao.jpg")
 const protect_image_2 = require("../assets/images/Thongbaokhan.jpg")
 const protect_image_3 = require("../assets/images/TTgkhuyencao.jpg")
 const protect_image_4 = require("../assets/images/TTg.jpg")
+const arrowdown = require("../assets/images/arrow.png")
+const splash = require("../assets/images/splash.png")
+
 export default {
     bg_welcome,
     plane_icon,
@@ -33,4 +36,7 @@ export default {
     protect_image_2,
     protect_image_3,
     protect_image_4,
+    arrowdown,
+    splash,
+
 }

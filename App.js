@@ -7,16 +7,19 @@ import  Tabs  from './navigation/tabs';
 import  Home  from './screens/home';
 import Notify  from './screens/notify'
 import { Login } from './screens';
+import EntryForm from "./screens/EntryForm"
+
 const Stack = createStackNavigator();
 
 function MyStack() {
   return (
     <Stack.Navigator 
       screenOptions={{headerShown: false}}
-      initialRouteName={'Notify'}
+      initialRouteName={'Login'}
     >
-      <Stack.Screen name="Notify" component={Notify} />
+      <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Tabs" component={Tabs} />
+      <Stack.Screen name="EntryForm" component={EntryForm} />
       {/* <Stack.Screen name="login" component={Login} />
       <Stack.Screen name="welcome" component={Welcome} /> */}
     </Stack.Navigator>

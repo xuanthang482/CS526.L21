@@ -50,7 +50,9 @@ function Home({navigation}){
                 </TouchableOpacity>
             </View>
             <View style={styles.container_2Btn}>
-                <TouchableOpacity style={styles.btn_1}>
+                <TouchableOpacity 
+                    onPress={() => navigation.navigate('EntryForm')} 
+                    style={styles.btn_1}>
                     <Image source={images.plane_icon} 
                             resizeMode='contain' 
                             style={{
