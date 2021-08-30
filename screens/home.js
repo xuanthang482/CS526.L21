@@ -63,7 +63,8 @@ function Home({navigation}){
                     />
                     <Text style={styles.text}>Khai báo y tế nhập cảnh</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.btn_2}>
+                <TouchableOpacity onPress={() => navigation.navigate('DomesticForm')} 
+                style={styles.btn_2}>
                     <Image source={images.train_icon} 
                                 resizeMode='contain' 
                                 style={{

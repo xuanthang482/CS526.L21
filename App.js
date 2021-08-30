@@ -8,6 +8,7 @@ import  Home  from './screens/home';
 import Notify  from './screens/notify'
 import { Login } from './screens';
 import EntryForm from "./screens/EntryForm"
+import DomesticForm from './screens/DomesticForm'
 
 const Stack = createStackNavigator();
 
@@ -20,8 +21,7 @@ function MyStack() {
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Tabs" component={Tabs} />
       <Stack.Screen name="EntryForm" component={EntryForm} />
-      {/* <Stack.Screen name="login" component={Login} />
-      <Stack.Screen name="welcome" component={Welcome} /> */}
+      <Stack.Screen name="DomesticForm" component={DomesticForm} />
     </Stack.Navigator>
   );
 

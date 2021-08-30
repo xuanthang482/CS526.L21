@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Button, View ,Text, StyleSheet, TouchableOpacity,Image} from "react-native";
 import DateTimePicker from "react-native-modal-datetime-picker";
-import arrowdown from '../assets/down-arrow.png'
+import { images } from "../constants"
 import moment from "moment";
 
 class TimePicker extends Component{
@@ -45,7 +45,7 @@ class TimePicker extends Component{
       <View style= {styles.container}>
         <Text>{this.state.chosendate}</Text>
         <TouchableOpacity onPress={this.showDatePicker}>
-          <Image source={arrowdown} style={{width:12,height:12}}/>
+          <Image source={images.arrowdown} style={{width:12,height:12}}/>
         </TouchableOpacity>
         <DateTimePicker 
            isVisible={this.state.isDatePickerVisible}

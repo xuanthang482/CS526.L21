@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View,Button, Image } from 'react-native';
 import { createBottomTabNavigator, BottomTabBar } from "@react-navigation/bottom-tabs"
 
-import { Home, Login, Notify, Complain, Account} from "../screens"
+import { Home, Login, Notify, Complain, Account,ReflectForm,Profile} from "../screens"
 
 import { COLORS, images } from "../constants"
 
@@ -60,7 +60,7 @@ function Tabs(){
                         }}
             />
             <Tab.Screen name="Phản ánh" 
-                        component={Complain}
+                        component={ReflectForm}
                         options={{
                             tabBarIcon: ({ focused }) => (
                                 <Image
@@ -77,7 +77,7 @@ function Tabs(){
                         }}
             />
             <Tab.Screen name="Tài khoản" 
-                        component={Account}
+                        component={Profile}
                         options={{
                             tabBarIcon: ({ focused }) => (
                                 <Image
